@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Body extends React.Component{
+class Footer extends React.Component{
     render(){
         return(
             <div>
@@ -9,4 +9,4 @@ class Body extends React.Component{
         )
     }
 }
-export default Body;
+export default Footer;
