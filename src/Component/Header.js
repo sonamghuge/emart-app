@@ -6,6 +6,7 @@ class Header extends React.Component{
     render(){
         return(
             <div>
+
                 <nav className="navbar fixed-top shadow-sm bg-white">
                     <div className="container">
                         <div className="row w-100">
@@ -67,7 +68,11 @@ class Header extends React.Component{
                         </div>
                     </div>
                 </nav>
-            </div>
+
+            
+
+              </div>  
+              
         )
     }
 }
