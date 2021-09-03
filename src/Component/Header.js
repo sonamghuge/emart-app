@@ -62,8 +62,7 @@ class Header extends React.Component{
                                         </div>
                                         </a>
                                     </div>
-                                </div>
-                                
+                                </div> 
                             </div>
                         </div>
                     </div>
