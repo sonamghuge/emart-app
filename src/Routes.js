@@ -31,7 +31,18 @@ export function Routes() {
 }
 function Home(){
 return(
-    <h1>This is my</h1>
+    <h1>This is my Home</h1>
+)
+}
+function About(){
+return(
+    <h1>This is my About</h1>
+)
+}
+function Contact(){
+return(
+function Contact(){
+    <h1>This is my </h1>
 )
 }
 // export default Routes
