@@ -1,15 +1,22 @@
 import React from 'react'
 import { BrowserRouter as Router,Switch, Route, Link } from 'react-router-dom'
-import Home from './Home'
+//import Home from './Home'
 
-export function Routes() {
+export default function RoutesExample() {
     return (
         <Router>
             <div>
                 <ul>
+                    {/* temp */}
+                    <li>
+                        <Link to="/a">Home1</Link>
+                    </li>
+                    {/* temp */}
+
                     <li>
                         <Link to="/">Home</Link>
                     </li>
+                                      
 
                     <li>
                         <Link to="/About">About</Link>
@@ -21,30 +28,29 @@ export function Routes() {
                 </ul>
                 
                 <switch>
-                    <Router path="/"><Home/></Router>
-                    <Router path="/About"><About/></Router>
-                    <Router path= "/Contact"><Contact/></Router>
+                    <Route exact path="/"><Home/></Route>
+                    <Route path="/About"><About/></Route>
+                    <Route path= "/Contact"><Contact/></Route>
                 </switch>
             </div>
         </Router>
     )
 }
 function Home(){
-return(
-    <h1>This is my Home</h1>
-)
+        return(
+            <h1>This is my Home</h1>
+        )
 }
 function About(){
-return(
-    <h1>This is my About</h1>
-)
+        return(
+            <h1>This is my About</h1>
+        )
 }
 function Contact(){
-return(
-function Contact(){
-    <h1>This is my </h1>
-)
+        return(
+            <h1>This is my Contact</h1>
+        )
 }
-// export default Routes
+
 
 
