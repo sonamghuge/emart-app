@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from './logo.png'
 import './index.css'
 
-class Header extends React.Component{
+class Navbar extends React.Component{
     render(){
         return(
             <div>
@@ -71,4 +71,4 @@ class Header extends React.Component{
         )
     }
 }
-export default Header;
+export default Navbar;
