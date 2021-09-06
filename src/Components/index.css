@@ -19,3 +19,8 @@
     padding: 10px;
     color: black;
 }
+
+.list-unstyle > li >a{
+    text-decoration: none;
+    font-size: 10px;
+}
