@@ -50,6 +50,17 @@ class Footer extends React.Component{
                                 </div>
                         </div>
                   </div>
+
+                  <div className="row">
+                        <div className="col-sm-12">
+                            <p className="text-white text-center">
+                                    All rights reserved to @
+                                    <Link to="/">
+                                        My-eMart
+                                    </Link>
+                            </p>
+                        </div>
+                  </div>
               </footer>
             </div>
         )
