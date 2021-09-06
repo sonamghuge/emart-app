@@ -6,9 +6,9 @@ class Navbar extends React.Component{
     render(){
         return(
             <div>
-                <nav className="navbar fixed-top shadow-sm bg-white">
+                <nav className="navbar fixed-top shadow-sm bg-white navbar-expand-lg">
                     <div className="container">
-                        <div className="row w-100">
+                        <div className="row">
                             <div className="col-sm-2">
                                 <a className="" href="#">
                                     <img className="w-100" src={Logo} alt="logo"/>
@@ -16,18 +16,22 @@ class Navbar extends React.Component{
                             </div>
                             <div className="col-sm-2"></div>
                             <div className="col-sm-8">
-                                <div className="row">
+                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent"
+                                    aria-expanded="false">
+                                    <i className="header-icon fas fa-bars"/>
+                                </button>
+                                <div className="row float-right collapse navbar-collapse" id="navbarcontent">
                                     <div className="col-xs-4">
 
-                                    <div className="dropdown">
-                                    <a href="#" className="header-text" data-toggle="dropdown" data-offset="20,10" aria-haspopup="true" aria-expanded="false">
-                                        <div className="d-inline-flex">
-                                        <div className="icon-wrap">
-                                            <i className="header-icon fas fa-user"/>
-                                        </div>
-                                        <div className="text-wrap">
-                                            <div>Sign in</div>
-                                            <i className="fas fa-caret-down"/>
+                                        <div className="dropdown">
+                                            <a href="#" className="header-text" data-toggle="dropdown" data-offset="20,10" aria-haspopup="true" aria-expanded="false">
+                                                <div className="d-inline-flex">
+                                                    <div className="icon-wrap">
+                                                        <i className="header-icon fas fa-user"/>
+                                                    </div>
+                                                <div className="text-wrap">
+                                                <div>Sign in</div>
+                                                <i className="fas fa-caret-down"/>
                                         </div>
                                         </div>
                                         </a>
