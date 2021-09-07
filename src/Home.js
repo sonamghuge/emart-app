@@ -10,9 +10,23 @@ import payment from './homeAssets/payment.png'
 import return1 from './homeAssets/return1.png'
 import trust from './homeAssets/trust.png'
 import { Link } from 'react-router-dom';
-
+import HomeTtem from './homeitem';
+import axios from 'axios';
 
 class Home extends React.Component{
+        constructor(props) {
+            super(props)
+        
+            this.state = {
+                 animals:[]
+            }
+        }
+        
+        componentDidMount(){
+            axios.get()
+        }
+    
+
     render(){
         return(
             <div>
@@ -89,6 +103,14 @@ class Home extends React.Component{
                         </div>
                     </div>
                 </section> 
+
+                <section className="third-section">
+                   <div className="row">
+                   <HomeTtem name='Goat' color='red'/>
+                   <HomeTtem name='dog' />
+                   <HomeTtem name='cat' color='black'/>
+                   </div>
+                </section>
                 <Footer/>
                  
             </div>
