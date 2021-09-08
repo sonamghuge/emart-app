@@ -22,8 +22,16 @@ class Home extends React.Component{
             }
         }
         
+        // componentDidMount(){
+        //     axios.get()
+        // }
+
         componentDidMount(){
-            axios.get()
+            axios.get('http://localhost:4000/')
+            .then(res => {
+                const animals =res.data;
+                this.setState({animals});
+            })
         }
     
 

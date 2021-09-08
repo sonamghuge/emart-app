@@ -14,4 +14,5 @@ class HomeTtem extends  React.Component {
     }
 }
 
-export default HomeTtem
+export default HomeTtem 
+ 
