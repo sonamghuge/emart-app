@@ -18,13 +18,13 @@ class Home extends React.Component{
             super(props)
         
             this.state = {
-                 animals:[]
+                animals:[]
             }
         }
         
-        // componentDidMount(){
-        //     axios.get()
-        // }
+        componentDidMount(){
+            axios.get()
+        }
 
         componentDidMount(){
             axios.get('http://localhost:4000/')
