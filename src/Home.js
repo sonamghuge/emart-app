@@ -10,7 +10,7 @@ import payment from './homeAssets/payment.png'
 import return1 from './homeAssets/return1.png'
 import trust from './homeAssets/trust.png'
 import { Link } from 'react-router-dom';
-import HomeTtem from './homeitem'
+import HomeItem from './homeitem'
 import AppContext from './AppContext'
 
 class Home extends React.Component{
@@ -99,15 +99,10 @@ class Home extends React.Component{
                 <section className="third-section">
                    <div className="row">
                    {
-                       this.context.animals.map((animal,index)=>
-                       <div className="p-5">
-                           <h1>{animal.name}</h1>
-                           <h2>{animal.color}</h2>
-                       </div>)
+                       this.context.products.map((product,index)=>
+                       <HomeItem product={product} key={index}/>
+                       )
                    }
-                   <HomeTtem name='Goat' color='red'/>
-                   <HomeTtem name='dog' />
-                   <HomeTtem name='cat' color='black'/>
                    </div>
                 </section>
                 <Footer/>

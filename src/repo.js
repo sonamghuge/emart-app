@@ -2,7 +2,7 @@ import axios from "axios";
 
 let url ='http://localhost:4000';
 
-export function getAnimals(){
-    return axios.get(`${url}/animals`)
+export function getProducts(){
+    return axios.get(`${url}/products`)
     .then(response=> response.data)
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import Home from './Home'
 import AppContext from './AppContext'
-import {getAnimals} from './repo'
+import { getProducts } from './repo'
 
 class Routes extends React.Component {
 
@@ -10,15 +10,15 @@ class Routes extends React.Component {
         super()
     
         this.state = {
-            animals:[] 
+            products:[] 
         }
     }
     
     componentDidMount(){
 
-        getAnimals().then((animals)=>{
+        getProducts().then((products)=>{
             this.setState({
-                animals
+                products
             })
         })
     }
