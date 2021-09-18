@@ -97,13 +97,16 @@ class Home extends React.Component{
                 </section> 
 
                 <section className="third-section">
-                   <div className="row">
+                 <div className="container">
+                 <h4 className="mb-3">Popular Products</h4>
+                 <div className="row">
                    {
                        this.context.products.map((product,index)=>
                        <HomeItem product={product} key={index}/>
                        )
                    }
                    </div>
+                 </div>
                 </section>
                 <Footer/>
                  
