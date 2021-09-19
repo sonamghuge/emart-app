@@ -16,7 +16,7 @@ class HomeTtem extends  React.Component {
                       <p className="card-text">{product.prod_description}</p>
 
                       <p className="card-text">Model no: {product.model_no}</p>
-                      <p className="card-text">{product.prod_description}</p>
+               
                       <h5 className="card-text">Product Price:<small>${product.prod_price}</small></h5>
                       <h5 className="card-text">Prime Price:<small>${product.prime_price}</small></h5>
                       <span className="card-text"><small>Discount: </small>{product.discount}</span>
