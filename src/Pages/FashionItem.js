@@ -6,7 +6,7 @@ class FashionItem extends  React.Component {
     render() {
         let {fashion} =this.props;
         return (
-            <div className="col-sm-3 mb-4">
+            <div className="col-sm-4 mb-4">
                     <div className="card p-3">
                     <div className="text-center">
                           <img className="img-fluid" src={this.props.fashion.pImagePath} alt=""/>
