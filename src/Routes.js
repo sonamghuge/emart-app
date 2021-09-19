@@ -1,8 +1,9 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import Home from './Home'
+import Fashions from './Pages/fashions'
 import AppContext from './AppContext'
-import { getProducts } from './repo'
+import { getProducts , getFashions} from './repo'
 
 class Routes extends React.Component {
 
@@ -10,7 +11,8 @@ class Routes extends React.Component {
         super()
     
         this.state = {
-            products:[] 
+            products:[] ,
+            fashions:[]
         }
     }
     
@@ -20,7 +22,15 @@ class Routes extends React.Component {
             this.setState({
                 products
             })
+        });
+
+        getFashions().then((fashions)=>{
+            this.setState({
+                fashions
+            })
         })
+
+
     }
 
     render() {
@@ -29,6 +39,7 @@ class Routes extends React.Component {
                 <AppContext.Provider value={this.state}>
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
+                    <Route path="/fashions" component={Fashions}></Route>
                 </Switch>
                 </AppContext.Provider>
             </div>

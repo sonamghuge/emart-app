@@ -1,4 +1,5 @@
 import React from 'react'
+import AppContext from './AppContext';
 
 class HomeTtem extends  React.Component {
    
@@ -28,6 +29,6 @@ class HomeTtem extends  React.Component {
         )
     }
 }
-
+HomeTtem.contextType=AppContext
 export default HomeTtem 
  
