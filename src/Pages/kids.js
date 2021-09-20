@@ -2,16 +2,16 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Sidebar from "../Components/Sidebar";
-import WomensItem from "./womensItem";
+import KidsItem from "./kidsItem";
 import AppContext from "../AppContext";
 
 
- class Womens extends React.Component {
+ class Kids extends React.Component {
     render() {
         return (
             <div>
                 <Navbar/>
-                <section className="womens-section">
+                <section className="kids-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-4">
@@ -20,8 +20,8 @@ import AppContext from "../AppContext";
                             <div className="col-sm-8">
                                 <div className="row">
                                     {
-                                        this.context.womens.map((women,index)=>
-                                        <WomensItem women={women} key={index}/>
+                                        this.context.kid.map((kid,index)=>
+                                        <KidsItem kid={kid} key={index}/>
                                         )
                                     }
                                 </div>
@@ -34,5 +34,5 @@ import AppContext from "../AppContext";
         )
     }
 }
-Womens.contextType= AppContext
-export default Womens
+Kids.contextType= AppContext
+export default Kids

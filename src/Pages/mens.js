@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Sidebar from "../Components/Sidebar";
-import MenItem from "./menItem";
+import MensItems from "./mensItems";
 import AppContext from "../AppContext";
+
 
  class Mens extends React.Component {
     render() {
@@ -19,8 +20,8 @@ import AppContext from "../AppContext";
                             <div className="col-sm-8">
                                 <div className="row">
                                     {
-                                        this.context.mens.map((men,index)=>
-                                        <MenItem men={men} key={index}/>
+                                        this.context.Mens.map((men,index)=>
+                                        <MensItems men={men} key={index}/>
                                         )
                                     }
                                 </div>

@@ -19,8 +19,8 @@ import AppContext from "../AppContext";
                             <div className="col-sm-8">
                                 <div className="row">
                                     {
-                                        this.context.electronics.map((electronic,index)=>
-                                        <ElectronicsItem electronic={electronic} key={index}/>
+                                        this.context.electronics.map((products,index)=>
+                                        <ElectronicsItem electronic={products} key={index}/>
                                         )
                                     }
                                 </div>

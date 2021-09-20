@@ -23,13 +23,13 @@ class Home extends React.Component{
         return(
             <div>
                 <Navbar/>
-                <section className="first-section" >
+                <section className="first-section">
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-4">
                                 <Sidebar />
                             </div>
-                            <div className="col-sm-8"  >
+                            <div className="col-sm-8">
                                 <div className="card">
                                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                                         <ol className="carousel-indicators">
@@ -39,7 +39,7 @@ class Home extends React.Component{
                                         </ol>
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
-                                            <img className="d-block w-100" src={slide1} alt="First slide"/  >
+                                            <img className="d-block w-100" src={slide1} alt="First slide"/>
                                         </div>
                                         <div className="carousel-item">
                                             <img className="d-block w-100" src={slide2} alt="Second slide"/>

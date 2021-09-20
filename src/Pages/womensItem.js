@@ -1,7 +1,7 @@
 import React from 'react'
 import AppContext from '../AppContext';
 
-class WomenItem extends  React.Component {
+class WomensItem extends  React.Component {
    
     render() {
         let {women} =this.props;
@@ -12,16 +12,16 @@ class WomenItem extends  React.Component {
                           <img className="img-fluid" src={this.props.women.pImagePath} alt=""/>
                     </div>
                       <hr/> 
-                      <h4 className="card-title">{women.prod_name}</h4>
+                      <h4 className="card-title">{women.prodName}</h4>
                       <p className="card-text">{women.brand}</p>
-                      <p className="card-text">{women.prod_description}</p>
+                      <p className="card-text">{women.prodDescription}</p>
 
                       <p className="card-text">Model no: {women.model_no}</p>
                
-                      <h5 className="card-text">Product Price:<small>${women.prod_price}</small></h5>
-                      <h5 className="card-text">Prime Price:<small>${women.prime_price}</small></h5>
+                      <h5 className="card-text">Product Price:<small>${women.prodPrice}</small></h5>
+                      <h5 className="card-text">Prime Price:<small>${women.primePrice}</small></h5>
                       <span className="card-text"><small>Discount: </small>{women.discount}</span>
-                      <span className="card-text"><small>Available Quantity: </small>{women.prod_quantity}</span>
+                      <span className="card-text"><small>Available Quantity: </small>{women.prodQuantity}</span>
                       <span className="card-text"><small>Pointes: </small>{women.points}</span>
                     </div>
                     
@@ -29,6 +29,6 @@ class WomenItem extends  React.Component {
         )
     }
 }
-WomenItem.contextType=AppContext
-export default WomenItem
+WomensItem.contextType=AppContext
+export default WomensItem
  

@@ -37,8 +37,8 @@ class Navbar extends React.Component {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Link
+                <a class="nav-link" href="/cart">
+                  Cart
                 </a>
               </li>
               <li class="nav-item">
@@ -96,13 +96,13 @@ class Navbar extends React.Component {
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="/women">
+                    <a class="dropdown-item" href="/womens">
                       Women
                     </a>
-                    <a class="dropdown-item" href="/men">
+                    <a class="dropdown-item" href="/mens">
                       Men
                     </a>
-                    <a class="dropdown-item" href="kids">
+                    <a class="dropdown-item" href="/kids">
                       Kids
                     </a>
                   </div>
@@ -123,14 +123,14 @@ class Navbar extends React.Component {
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
-                      Action
+                    <a class="dropdown-item" href="/television">
+                    Television
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Another action
+                    <a class="dropdown-item" href="/referigerator">
+                    Referigerator
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Something else here
+                    <a class="dropdown-item" href="/washingmachine">
+                    Washing Machine
                     </a>
                   </div>
                 </li>
@@ -150,14 +150,14 @@ class Navbar extends React.Component {
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
-                      Action
+                    <a class="dropdown-item" href="/mobiles">
+                      Mobiles
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Another action
+                    <a class="dropdown-item" href="/cameras">
+                      Cameras
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Something else here
+                    <a class="dropdown-item" href="/laptops">
+                      Laptops
                     </a>
                   </div>
                 </li>
@@ -177,14 +177,14 @@ class Navbar extends React.Component {
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
-                      Action
+                    <a class="dropdown-item" href="/cricket">
+                      Cricket
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Another action
+                    <a class="dropdown-item" href="/football">
+                      Football
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Something else here
+                    <a class="dropdown-item" href="/badminton">
+                      Badminton
                     </a>
                   </div>
                 </li>
@@ -204,14 +204,14 @@ class Navbar extends React.Component {
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
-                      Action
+                    <a class="dropdown-item" href="/mwatches">
+                      Men Watches
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Another action
+                    <a class="dropdown-item" href="/wallets">
+                      Wallets
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Something else here
+                    <a class="dropdown-item" href="/mfragrances">
+                      Men Fragrances
                     </a>
                   </div>
                 </li>
@@ -231,14 +231,17 @@ class Navbar extends React.Component {
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
-                      Action
+                    <a class="dropdown-item" href="/wwatches">
+                      Women Watches
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Another action
+                    <a class="dropdown-item" href="/beautyproducts">
+                    Beauty Products
                     </a>
-                    <a class="dropdown-item" href="#">
-                      Something else here
+                    <a class="dropdown-item" href="/jwellery">
+                    Jwellery
+                    </a>
+                    <a class="dropdown-item" href="/wfragrances">
+                    Women Fragrances
                     </a>
                   </div>
                 </li>
