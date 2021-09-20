@@ -1,9 +1,9 @@
 import axios from "axios";
 
-let url ='http://localhost:4000';
+let url ='http://localhost:8080';
 
 export function getProducts(){
-    return axios.get(`${url}/products`)
+    return axios.get(`${url}/Products/all`)
     .then(response=> response.data)
 }
 
