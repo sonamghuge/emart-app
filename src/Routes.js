@@ -2,8 +2,13 @@ import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import Home from './Home'
 import Fashions from './Pages/fashions'
+import Homes from './Pages/homes'
+import Electronics from './Pages/electronics'
+import Sports from './Pages/sports'
+import Womens from './Pages/womens'
+import Mens from './Pages/mens'
 import AppContext from './AppContext'
-import { getProducts , getFashions} from './repo'
+import { getProducts , getFashions, getHome , getElectronics , getSport , getWomen, getMen} from './repo'
 
 class Routes extends React.Component {
 
@@ -12,7 +17,12 @@ class Routes extends React.Component {
     
         this.state = {
             products:[] ,
-            fashions:[]
+            fashions:[] ,
+            home:[],
+            electronics:[],
+            sport:[],
+            women:[],
+            Men:[]
         }
     }
     
@@ -30,6 +40,36 @@ class Routes extends React.Component {
             })
         })
 
+        getHome().then((home)=>{
+            this.setState({
+                home
+            })
+        })
+
+        getElectronics().then((electronics)=>{
+            this.setState({
+                electronics
+            })
+        })
+
+        getSport().then((sport)=>{
+            this.setState({
+                sport
+            })
+        })
+
+        getWomen().then((women)=>{
+            this.setState({
+                women
+            })
+        })
+
+        getMen().then((men)=>{
+            this.setState({
+                men
+            })
+        })
+
 
     }
 
@@ -40,6 +80,11 @@ class Routes extends React.Component {
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/fashions" component={Fashions}></Route>
+                    <Route path="/homes" component={Homes}></Route>
+                    <Route path="/electronics" component={Electronics}></Route>
+                    <Route path="/sports" component={Sports}></Route>
+                    <Route path="/womens" component={Womens}></Route>
+                    <Route path="/mens" component={Mens}></Route>
                 </Switch>
                 </AppContext.Provider>
             </div>
