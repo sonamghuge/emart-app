@@ -32,7 +32,7 @@ import AppContext from "../AppContext";
                 <Footer/>
             </div>
         )
-    }
+     }
 }
 Mobiles.contextType= AppContext
 export default Mobiles
